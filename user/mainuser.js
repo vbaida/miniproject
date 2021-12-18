@@ -4,7 +4,8 @@ fetch('https://jsonplaceholder.typicode.com/users/' )
         let div = document.createElement('div')
         div.classList.add('container')
         for (const user of users) {
-               let divuser = document.createElement('div');
+
+                let divuser = document.createElement('div');
                 divuser.classList.add('post');
                 div.append(divuser)
                 divuser.innerHTML = `
@@ -27,9 +28,9 @@ fetch('https://jsonplaceholder.typicode.com/users/' )
                 btn.style.width = '200px'
                 btn.style.height = '50px'
                 btn.innerHTML = `<h3>Нажми на  мене</h3>`
-        divuser.append(btn)
-                btn.onclick =()=> {
-                    fetch('https://jsonplaceholder.typicode.com/users/' + user.id + '/posts')
+                divuser.append(btn)
+                btn.onclick = () => {
+                    fetch('https://jsonplaceholder.typicode.com/posts/')
                         .then(response => response.json())
                         .then(posts => {
                             for (const post of posts) {
@@ -46,13 +47,13 @@ fetch('https://jsonplaceholder.typicode.com/users/' )
 
                                 }
 
-                                }
+                            }
 
-                            })
+                        })
 
-                        }
-            // button.disabled = true;
                 }
+                button.disabled = true;
+            }
 
 
 document.body.append(div)
