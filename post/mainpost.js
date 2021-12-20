@@ -40,9 +40,9 @@ fetch('https://jsonplaceholder.typicode.com/posts/' + idpost)
                                         <h4>Body: ${comment.body}</h4>`
                                 divPost.append(divcomment)
                                 divcomment.append(divCardComments)
-
+                                div.append(divPost)
                             }
-
+btn.disabled=true
                         }
 
                     }
@@ -50,7 +50,7 @@ fetch('https://jsonplaceholder.typicode.com/posts/' + idpost)
                 )
 
 
-            div.append(divPost)
+
         }
 
         document.body.append(div)})

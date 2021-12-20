@@ -61,13 +61,13 @@ fetch('https://jsonplaceholder.typicode.com/users/' + iduser )
 
 
                                 }
-
+btn.disabled=true
                             }
 
                         }
 
                     )
-
+                button.disable=false
             }
 
 
