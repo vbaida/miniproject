@@ -58,11 +58,14 @@ fetch('https://jsonplaceholder.typicode.com/users/' + iduser )
                                     divuser.append(divcardpost)
                                     divcardpost.append(divCardComments)
                                     divCardComments.append(detailslink)
-                                    // divCardComments.append(btn1)
+
 
                                 }
+
                             }
+
                         }
+
                     )
 
             }
